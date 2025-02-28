@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="output.css" />
+		<link href="./output.css" rel="stylesheet" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CTRL-Human</title>
 	</head>
-	<body>
+	<body class="font-[Inter] bg-white">
 		<div id="app">
-			<div class="hero"></div>
-			<div class="about-us"></div>
+			<div class="hero grid grid-cols-2 min-h-full w-full">
+				<div class="text col-span-1 h-full">
+					<div class="grid grid-cols-4 h-full">
+						<div class="col-span-1 h-full p-0">
+							<h1
+								class="text-end lg:text-9xl xl:text-[164px] lg:[line-height:0.75] m-0 p-0 [writing-mode:vertical-lr] [text-orientation:mixed] min-h-full w-full text-nowrap"
+							>
+								CTRL-Human
+							</h1>
+						</div>
+						<div class="col-span-3 flex flex-col justify-end">
+							<h1
+								class="lg:text-9xl [writing-mode:vertical-lr] [text-orientation:mixed] text-blue-800"
+							>
+								->
+							</h1>
+							<h1 class="text-right lg:text-7xl text-neutral-500">
+								The <br />
+								Future <br />
+								of <br />
+								Human Fashion
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div class="image col-span-1">
+					<img
+						class="object-cover h-full w-full"
+						src="./assets/hero-face.png"
+						alt="futuristic picture of woman"
+					/>
+				</div>
+			</div>
+			<div class="about-us min-h-screen w-full bg-blue-800"></div>
 		</div>
 	</body>
 </html>

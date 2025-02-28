@@ -1,4 +1,5 @@
 /*! tailwindcss v4.0.7 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -517,7 +518,126 @@
     display: none !important;
   }
 }
-@layer utilities;
+@layer utilities {
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .min-h-full {
+    min-height: 100%;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .bg-blue-800 {
+    background-color: var(--color-blue-800);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
+  }
+  .object-left-bottom {
+    object-position: left bottom;
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .text-end {
+    text-align: end;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .font-\[Inter\] {
+    font-family: Inter;
+  }
+  .text-nowrap {
+    text-wrap: nowrap;
+  }
+  .text-blue-800 {
+    color: var(--color-blue-800);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .text-neutral-500 {
+    color: var(--color-neutral-500);
+  }
+  .text-neutral-800 {
+    color: var(--color-neutral-800);
+  }
+  .\[text-orientation\:mixed\] {
+    text-orientation: mixed;
+  }
+  .\[writing-mode\:vertical-lr\] {
+    writing-mode: vertical-lr;
+  }
+  .lg\:text-7xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-7xl);
+      line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .lg\:text-9xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-9xl);
+      line-height: var(--tw-leading, var(--text-9xl--line-height));
+    }
+  }
+  .lg\:\[line-height\:0\.75\] {
+    @media (width >= 64rem) {
+      line-height: 0.75;
+    }
+  }
+  .xl\:text-\[164px\] {
+    @media (width >= 80rem) {
+      font-size: 164px;
+    }
+  }
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
