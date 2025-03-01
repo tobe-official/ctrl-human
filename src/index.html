@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="output.css" />
+		<link href="./output.css" rel="stylesheet" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CTRL-Human</title>
 	</head>
-	<body>
+	<body class="font-[Inter] bg-white">
 		<div id="app">
-			<div class="hero"></div>
-			<div class="about-us"></div>
+			<div class="hero md:grid md:grid-cols-2 min-h-full w-full">
+				<div class="z-20 col-span-1 h-full">
+					<div class="z-20 grid grid-cols-4 h-full">
+						<div class="z-20 col-span-1 h-full p-0">
+							<h1
+								class="text-end text-8xl lg:text-9xl lg:[line-height:0.75] m-0 p-0 [writing-mode:vertical-lr] [text-orientation:mixed] min-h-full w-full text-nowrap"
+							>
+								CTRL-Human
+							</h1>
+						</div>
+						<div class="z-20 col-span-3 flex flex-col justify-end">
+							<h1
+								class="text-9xl [writing-mode:vertical-lr] [text-orientation:mixed] text-blue-800"
+							>
+								->
+							</h1>
+							<!-- TODO Add text shadow or other text color on mobile screen -->
+							<h1 class="text-right text-7xl text-neutral-500">
+								The <br />
+								Future <br />
+								of <br />
+								Human Fashion
+							</h1>
+						</div>
+					</div>
+				</div>
+				<div
+					class="right-0 bottom-0 z-0 md:z-20 absolute md:relative image md:col-span-1 h-full w-full"
+				>
+					<img
+						class="md:relative object-cover h-full w-full"
+						src="./assets/hero-face.png"
+						alt="futuristic picture of woman"
+					/>
+				</div>
+			</div>
+			<div class="about-us min-h-screen w-full bg-blue-800"></div>
 		</div>
 	</body>
 </html>
